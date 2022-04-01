@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 use App\Http\Controllers\Tool\ExcelController;
 use App\Http\Controllers\Tool\Email;
+use App\Http\Controllers\Tool\SimpleCrawler;
+use App\Http\Controllers\Tool\ReponsitoryController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -32,3 +34,8 @@ Route::post('/ExelModal_ImportQueue', [ExcelController::class,"queueImport"])->n
 Route::get('/ExelModal_ExportBasic', [ExcelController::class,"basicExport"])->name('exportBasic');
 Route::get('/ExelModal_ExportQueue', [ExcelController::class,"queueExport"])->name('exportQueue');
 Route::get('/SentMail', [Email::class,"sendMail"])->name('sendmail');
+Route::get('/crawler', [SimpleCrawler::class,"index"])->name('crawler');
+Route::post('/post_crawler', [SimpleCrawler::class,"post"])->name('post_crawler');
+Route::get('/repository', [ReponsitoryController::class,"index"]);
+
+

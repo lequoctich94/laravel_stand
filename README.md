@@ -106,3 +106,14 @@
     MAIL_FROM_NAME="${APP_NAME}"
 Account và pass đăng kí trên mail trap
 
+# Crawler
+Sử dụng thư viện 
+ "kub-at/php-simple-html-dom-parser": "^1.9"
+
+# Reponsitory
+
+- Interface: App/Contracts/Repositories
+- Repository: App/Repositories
+- Controller:Controllers/RepositoryController
+- Depency interface: AppServiceProvider.php
+
