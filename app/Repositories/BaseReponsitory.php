@@ -9,6 +9,8 @@ abstract class BaseReponsitory implements AbstractRepositoryInterface
 {
 
     //set model
+    //tạo 1 construct ở đây, thay vì bỏ param vào construct sẽ đẫn đến lỗi khi new, ta sẽ sử dụng 1 abstract function để
+    //bắt buộc lớp kế thừa class BaseReponsitory phải set param vào
     public function __construct()
     {
         $this->setModel();
