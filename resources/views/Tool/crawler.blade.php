@@ -1,10 +1,7 @@
 <x-client.layout>
-    <!--merge test-->
 
-    <!--rebase test-->
 
-    <!--merge test1-->
-    <!--merge test2-->
+    <!--merge test3-->
 
     <div class="toolbar" id="kt_toolbar">
         <!--begin::Container-->
