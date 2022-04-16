@@ -1,6 +1,7 @@
 <x-client.layout>
     <!--test1-->
     <!--test2-->
+    <!--rebase-->
     <!--begin::Toolbar-->
     <div class="toolbar" id="kt_toolbar">
         <!--begin::Container-->
