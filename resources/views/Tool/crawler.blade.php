@@ -2,6 +2,7 @@
 
 
     <!--merge test3-->
+     <!--merge test4-->
 
     <div class="toolbar" id="kt_toolbar">
         <!--begin::Container-->
