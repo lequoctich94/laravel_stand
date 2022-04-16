@@ -1,7 +1,6 @@
 <x-client.layout>
     <!--test1-->
     <!--test2-->
-     <!--merge-->
     <!--begin::Toolbar-->
     <div class="toolbar" id="kt_toolbar">
         <!--begin::Container-->
