@@ -1,6 +1,11 @@
 <x-client.layout>
     <!--merge test-->
+
     <!--rebase test-->
+
+    <!--merge test1-->
+    <!--merge test2-->
+
     <div class="toolbar" id="kt_toolbar">
         <!--begin::Container-->
         <div id="kt_toolbar_container" class="container-fluid d-flex flex-stack">
