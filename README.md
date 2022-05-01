@@ -25,6 +25,8 @@
 
    # Custom template, and process authen
    https://jetstream.laravel.com/2.x/features/authentication.html
+
+   composer require laravel/jetstream
    # Register
    Custom register
    app/action/Fority/CreateNewUser.php line 25
@@ -41,9 +43,13 @@
     có thể lấy ra ghi đề nếu cần custom thêm
 
    # Team
-   # Permission
-
-   # -----------------------------------------------------------------------------
+   https://jetstream.laravel.com/2.x/features/teams.html
+   
+   # Permission middleware
+   # ---------------------------------------------------------------------------------------------------------------------------
+   # Eloquent relation ship
+   # Chi tiết bên controller RelationEloquent
+   # ---------------------------------------------------------------------------------------------------------------------------
    # Exel
    # https://docs.laravel-excel.com/3.1/exports/export-formats.html
 
@@ -80,7 +86,7 @@
 
   # Sử dung flag session để in thông báo
 
-  # ----------------------------------------------------------------------------------------------------------------------------------------------
+  # --------------------------------------------------------------------------------------------------------------------------------
   # Email: https://laravel.com/docs/8.x/mail#configuration
   Nếu sài mail gun (không thì thôi)
     cài driver mail gun

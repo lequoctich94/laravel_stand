@@ -16,6 +16,8 @@ use App\Http\Controllers\Tool\ExcelController;
 use App\Http\Controllers\Tool\Email;
 use App\Http\Controllers\Tool\SimpleCrawler;
 use App\Http\Controllers\Tool\ReponsitoryController;
+use App\Http\Controllers\Admin\CheckAuthenUser;
+use App\Http\Controllers\Tool\RelationEloquent;
 
 Route::get('/', function () {
     return view('welcome');
@@ -23,11 +25,9 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
-
+//admin
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', [CheckAuthenUser::class,"index"])->name('dashboard');
+//user
 Route::get('/ExelModal', [ExcelController::class,"index"])->name('excelUi');
 Route::post('/ExelModal_ImportBasic', [ExcelController::class,"basicImport"])->name('BasicImport');
 Route::post('/ExelModal_ImportQueue', [ExcelController::class,"queueImport"])->name('importQueue');
@@ -37,5 +37,8 @@ Route::get('/SentMail', [Email::class,"sendMail"])->name('sendmail');
 Route::get('/crawler', [SimpleCrawler::class,"index"])->name('crawler');
 Route::post('/post_crawler', [SimpleCrawler::class,"post"])->name('post_crawler');
 Route::get('/repository', [ReponsitoryController::class,"index"]);
+
+//eloquent
+Route::get('/eloquent', [RelationEloquent::class,"index"])->name("eloquent");
 
 
