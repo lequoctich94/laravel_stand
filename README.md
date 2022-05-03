@@ -1,52 +1,5 @@
-# Blade Template sử dụng component
-# Sử dụng  jetstream để thực hiện authen https://jetstream.laravel.com/2.x/introduction.html
-
- composer require laravel/jetstream
- php artisan jetstream:install livewire --teams
- npm install
- npm run dev
- php artisan migrate
- php artisan vendor:publish --tag=jetstream-views
- 
- # lưu ý: thêm này vào app config 
- #Target [Laravel\Fortify\Contracts\CreatesNewUsers] is not instantiable.
- App\Providers\FortifyServiceProvider::class,
- App\Providers\JetstreamServiceProvider::class,
-
-   # cach su dung va custom
-   # config
-   config/fortify.php
-   # class authen
-   app/Actions
-   resources/views
-   # view
-   resources/views/auth/login.blade.php
-
-
-   # Custom template, and process authen
-   https://jetstream.laravel.com/2.x/features/authentication.html
-
-   composer require laravel/jetstream
-   # Register
-   Custom register
-   app/action/Fority/CreateNewUser.php line 25
-   resources\views\auth\register.blade.php
-   Thêm account vào model user fillable
-
-   # Login
-   Custom login
-   - Change user name: config/fortify.php => change 'username' => 'email'  ->>>>>>>  'username' => 'account'
-   - i want to login by account and email => change in JetstreamServiceProvider
-
-   # Route Authen
-    laravel_stand\vendor\laravel\fortify\routes\routes.php 
-    có thể lấy ra ghi đề nếu cần custom thêm
-
-   # Team
-   https://jetstream.laravel.com/2.x/features/teams.html
-   
-   # Permission middleware
-   # ---------------------------------------------------------------------------------------------------------------------------
+   # Blade Template sử dụng component
+   ---------------------------------------------------------------------------------------------------------------------------
    # Eloquent relation ship
    # Chi tiết bên controller RelationEloquent
    # ---------------------------------------------------------------------------------------------------------------------------
