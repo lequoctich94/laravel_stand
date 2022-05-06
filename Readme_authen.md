@@ -84,3 +84,10 @@
    
    # -------------------------------------------------------------------------------------------------------------
    # Sử Dụng Passport
+   Passport có thể thay thế cho laravel santum api, giúp cung cấp xác thực 
+   người dùng, nếu ứng dụng không yêu cầu oath 2.0 thì nên sử dụng 
+   santum api cho dễ
+
+   Hướng dẫn Cách dùng passport:
+
+   https://docs.google.com/spreadsheets/d/1CDiIqLI7za1RrQpX4crNMDhiGPqumLfxA_LUwK46vjE/edit?usp=sharing
